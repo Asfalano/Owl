@@ -4,14 +4,17 @@ body {
    position: relative;
    margin: 50px;
    background: #fafbfe;
-
    font-style: normal;
    font-family: "Lato", sans-serif;
+   max-width: 1440px;
+}
+a {
+   text-decoration: none;
 }
 
 .logo {
-   width: 200px;
-   height: 80px;
+   width: 159px;
+   height: 55px;
 }
 
 .head {
@@ -48,7 +51,10 @@ body {
 }
 
 .link-list {
-   list-style-image: Rectangle.jpg;
+   list-style-type: none;
+}
+.link-list li {
+   list-style-image: url(Rectangle.png);
 }
 
 .box {
@@ -59,28 +65,29 @@ body {
    right: 50px;
    top: 50px;
    width: 300px;
-   padding: 20px;
+   padding: 20px 20px 20px;
 }
 .first-box {
    text-align: left;
    height: 40px;
-   margin: 10px;
    position: relative;
-
+   padding: 6px;
    border: 2px solid #ebebeb;
    box-sizing: border-box;
    border-radius: 5px;
    font-family: inherit;
    background: transparent;
+   margin-bottom: 10px;
 }
 .first-box input {
    border: none;
 }
 
-.btn {
-   text-align: left;
+.btn button {
+   border: none;
+   text-align: center;
    height: 40px;
-   margin: 10px;
+   width: 100%;
    position: relative;
 
    border: 2px solid #ebebeb;
@@ -88,9 +95,66 @@ body {
    border-radius: 0 10px;
    font-family: inherit;
    background: #f5c464;
+   cursor: pointer;
+}
+.ask {
+   outline: none;
 }
 
-.btn input {
-   border: none;
-   background: transparent;
+.btn:hover {
+   opacity: 0.9;
 }
+
+.head2 {
+   position: absolute;
+   top: 450px;
+   text-align: center;
+   width: 100%;
+}
+
+.options {
+   position: relative;
+   top: 500px;
+   display: flex;
+}
+
+.options-text {
+   width: 522px;
+   height: 130px;
+   padding-left: 55px;
+}
+
+.img1 {
+   position: relative;
+   width: 590px;
+   height: 472px;
+}
+
+.options-imgs {
+   position: relative;
+   width: 100%;
+   padding-top: 70px;
+}
+
+.options-imgs > div {
+   position: relative;
+   float: left;
+   display: flex;
+   width: 45%;
+   background: #ffffff;
+   box-shadow: 2px 6px 9px rgba(214, 214, 214, 0.48);
+   border-radius: 10px;
+   /* box-sizing: border-box; */
+   height: 50px;
+   padding: 10px;
+   margin: 5px 5px 15px 0;
+}
+
+.options-imgs > p {
+   padding: 5px;
+}
+
+/* .png {
+   height: 50px;
+   padding: 15px;
+} */
