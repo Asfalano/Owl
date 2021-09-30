@@ -119,20 +119,20 @@ a {
 }
 
 .options-text {
-   width: 522px;
+   max-width: 522px;
    height: 130px;
    padding-left: 55px;
 }
 
 .img1 {
    position: relative;
-   width: 590px;
+   max-width: 590px;
    height: 472px;
 }
 
 .options-imgs {
    position: relative;
-   width: 100%;
+   max-width: 100%;
    padding-top: 70px;
 }
 
@@ -164,8 +164,9 @@ a {
    background: #46cf7d;
    width: 200px;
    left: 500px;
+   cursor: pointer;
 }
 
-.btn:hover {
+.btn1:hover {
    opacity: 0.9;
 }
